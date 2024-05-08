@@ -20,4 +20,4 @@ jobs:
         run: curl -LJO https://downloads.mend.io/cli/linux_amd64/mend && chmod +x mend
       # Run CLI
       - name: Run WS-SAST
-        run: ./wscli --dir ./ --name=${{github.event.repository.name}}-${{github.ref_name}}-${{github.sha}} --app=${{github.event.repository.name}} --baseline=true
+        run: ./mend --dir ./ --name=${{github.event.repository.name}}-${{github.ref_name}}-${{github.sha}} --app=${{github.event.repository.name}} --baseline=true

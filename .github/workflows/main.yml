@@ -23,4 +23,3 @@ jobs:
         run: ./mend code --dir ./ --name=${{github.event.repository.name}}-${{github.ref_name}}-${{github.sha}} --app=${{github.event.repository.name}} --baseline=true
 
 
-
